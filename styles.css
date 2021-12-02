@@ -10,6 +10,7 @@
     --light-color: #6ecce4;
     --dark-color: rgb(19,29,147);
     --light-background: #f7ece3;
+    --dark-pink: #F94C96;
 }
 
 .main-button-container {
@@ -28,50 +29,53 @@
     border: none;
     font-size: 20pt;
     font-weight: 700;
-    margin-top: 0px;
-    margin-left: 60px;
 }
 
 .main-button:hover {
     background: #bde7ec;
 }
 
-.project-button, .contact-button {
+#me {
+    width: 12cm;
+    border-radius: 50%;
+}
+
+.about-images {
+    width: 6cm;
+    border-radius: 25%;
+}
+
+.project-button, .contact-button, #javascript, #html, #css, #node, #github-skills {
     color: var(--dark-color);
     border-radius: 5px;
     border: none;
     font-weight: 500;
     font-size: 98pt;
-    color:#F94C96;
+    color: var(--dark-pink);
     background: var(--light-background);
     margin: 30px;
 }
 
-.project-container, .contact-button-container {
-    text-align: center;
-    font-size: 16pt;
-    font-weight: 450;
-}
-
 .project-button:hover, .contact-button:hover {
     color:#ffaf37;
-
 }
 
-#linkedin, #github, #email, #youtube, #github-project, #heroku {
+#linkedin, #github-contact, #email, #youtube, #github-project, #heroku, #javascript, #html, #css, #node, #github-skills {
     background: var(--light-background);
 }
-
 
 h3 {
     background: var(--light-background);
     color: var(--dark-color);
     font-size: 14pt;
     font-weight: 500;
-    height: 800px;
-    margin-left: 170px;
-    margin-right: 170px;
-    padding: 40px;
+    height: 1100px;
+    margin-left: 220px;
+    margin-right: 220px;
+    padding: 50px;
+    text-align: center;
+    font-size: 16pt;
+    font-weight: 450;
 }
 
 h3 > p {
