@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 20;
+    box-sizing: border-box;
+    background: url(/background-image.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.top-buttons {
+    background: #6ecce4;
+    width: 100%;
+    text-align: center;
+    display:inline-block;
+}
+
+.main-button {
+    background:#6ecce4;
+    color: rgb(19,29,147);
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Play', sans-serif;
+    font-size: 16pt;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.main-button:active {
+    background: #2084D1;
+}
+
+p {
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 40px;
+    color: rgb(23, 66, 37);
+}
