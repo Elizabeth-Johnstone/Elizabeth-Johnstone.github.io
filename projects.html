@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,46 +10,79 @@
     <script src="https://kit.fontawesome.com/6c9632d255.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="main-button-container">
-        <button class="main-button" id="home-button" onclick="window.location.href='/index.html'">Home</button>
-        <button class="main-button" id="about-button" onclick="window.location.href='/about.html'">About</button>
-        <button class="main-button" id="skills-button" onclick="window.location.href='/skills.html'">Skills</button>
-        <button class="main-button" id="projects-button" style="background: #bde7ec" onclick="window.location.href='/projects.html'">Projects</button>
-        <button class="main-button" id="contact-button" onclick="window.location.href='/contact.html'">Contact</button>
-    </div> 
-    <h3 class="project-container">
-        <br>
-        <p>The Space Calculator</p>
-        <br>
-        The Space Calculator is a full-stack web application that transports users to the stars while they make their calculations. This app provides all the functionality of a basic calculator and offers a few exciting new galaxies to explore.
-        <br>
-        <br>
-        JavaScript, HTML, CSS, Express, CORS, Axios, JSON
-        <br>
-        <br>
-        <br>
-        Experience the app here:
-        <br>
-        <button class="project-button">
-            <a class="project-button" href="https://youtu.be/dkGommfXCPU" target="_blank">
+    <div class="main-btn-container">
+        <button class="main-btn" id="home-btn" onclick="window.location.href='/index.html'">Home</btn>
+            <button class="main-btn" id="about-btn" onclick="window.location.href='/about.html'">About</btn>
+                <button class="main-btn" id="skills-btn" onclick="window.location.href='/skills.html'">Skills</btn>
+                    <button class="main-btn" id="projects-btn" style="background: #bde7ec"
+                        onclick="window.location.href='/projects.html'">Projects</btn>
+                        <button class="main-btn" id="contact-btn" onclick="window.location.href='/contact.html'">Contact
+                            </btn>
+    </div>
+
+    <div class="projects-container" id="first-project">
+        <div class="main-wrapper">
+            <h2 class="main-title">The Space Calculator</h2>
+            <div class="project-description">
+                The Space Calculator is a full-stack web application that transports users to the stars while they make
+                their calculations. This app provides all the functionality of a basic calculator and offers a few
+                exciting new galaxies to explore.
+            </div>
+            <div class="project-description">
+                JavaScript, HTML, CSS, Express, Axios, JSON
+            </div>
+            <div class="project-description">
+                Experience the app here:
+            </div>
+        </div>
+        <div class="project-btn-container">
+            <a class="btn" href="https://youtu.be/dkGommfXCPU" target="_blank">
                 <i class="fab fa-youtube" id="youtube"></i>
             </a>
-        </button>
-        <button class="project-button">
-            <a class="project-button" href="https://github.com/Elizabeth-Johnstone/Calculator_Project" target="_blank">
+            <a class="btn" href="https://github.com/Elizabeth-Johnstone/Calculator_Project" target="_blank">
                 <i class="fab fa-github" id="github-project"></i>
             </a>
-        </button>
-        <button class="project-button">
-            <a class="project-button" href="https://space-calculator-project.herokuapp.com/" target="_blank">
+            <a class="btn" href="https://space-calculator-project.herokuapp.com/" target="_blank">
                 <i class="fas fa-eye" id="heroku"></i>
-            </a>  
-        </button>
-    </h3>
+            </a>
+        </div>
+    </div>
+
+    <div class="projects-container" id="last-project">
+        <div class="main-wrapper">
+            <h2 class="main-title">My Veg Café</h2>
+            <div class="project-description">
+                My Veg Café is a full-stack web application that allows users to explore yummy vegetarian recipes. Users
+                can create an account and save recipes to a "favorites" list for when they are feeling inspired. The
+                recipes on My Veg Café are all real recipes that I make often and I took all of the photos! :)
+            </div>
+            <div class="project-description">
+                React, CSS, Express, Axios, JSON, PostgreSQL, Sequelize
+            </div>
+            <div class="project-description">
+                Experience the app here:
+            </div>
+        </div>
+        <div class="project-btn-container">
+            <a class="btn" href="https://youtu.be/seg8Rdv_LAU" target="_blank">
+                <i class="fab fa-youtube" id="youtube"></i>
+            </a>
+            <a class="btn" href="https://github.com/Elizabeth-Johnstone/My_Veg-Cafe-Project" target="_blank">
+                <i class="fab fa-github" id="github-project"></i>
+            </a>
+            <a class="btn" href="https://my-veg-cafe-project.herokuapp.com" target="_blank">
+                <i class="fas fa-eye" id="heroku"></i>
+            </a>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -1,26 +1,27 @@
 * {
     margin: 0;
-    padding: 20;
+    padding: 0;
     box-sizing: border-box;
-    background: url(/background-image.jpg);
+    background: url(images/background-image.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
     font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
     --light-color: #6ecce4;
     --dark-color: rgb(19,29,147);
     --light-background: #f7ece3;
     --dark-pink: #F94C96;
 }
 
-.main-button-container {
+.main-btn-container {
     background: var(--light-color);
     width: 100%;
     text-align: center;
     display:inline-block;
 }
 
-.main-button {
+.main-btn {
     background: var(--light-color);
     color: var(--dark-color);
     width: 150px;
@@ -31,56 +32,157 @@
     font-weight: 700;
 }
 
-.main-button:hover {
+.main-btn:hover {
     background: #bde7ec;
 }
 
-#me {
-    width: 12cm;
-    border-radius: 50%;
-}
+/* Starting to fix here */
 
-.about-images {
-    width: 6cm;
-    border-radius: 25%;
-}
-
-.project-button, .contact-button, #javascript, #html, #css, #node, #github-skills {
+.main-container, .projects-container {
     color: var(--dark-color);
-    border-radius: 5px;
+    background: var(--light-background);
+    font-size: 14pt;
+    font-weight: 500;
+    margin-right: 15vw;
+    margin-left: 15vw;
+    padding-bottom: 3vw;
+}
+
+.project-description, .project-btn-container, .btn, #youtube, #github-project, #heroku, .main-wrapper, .main-btns, .contact-btn, #linkedin, #github-contact, #email, .main-title, .subtitle, .skills-btn, #react, #javascript, #html, #css, #sql, #node, #github-skills, .about-img-container, .about-subtitle, .home-name {
+    background: var(--light-background);
+}
+
+.main-title {
+    font-size: 18pt;
+    font-weight: 650;
+    padding-top: 2vh;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+}
+
+#home-wrapper, #contact-wrapper, #skills-wrapper {
+    height: 750px;
+}
+
+.project-description, .project-btn-container, .main-wrapper .subtitle, #about-first-sub {
+   padding-top: 3.5vh; 
+}
+
+.project-btn-container, .main-btns, .about-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+#first-project {
+    padding-top: 6vh;
+}
+
+#last-project {
+    padding-bottom: 10vh;
+}
+
+.btn, #react, #javascript, #html, #css, #sql, #node, #github-skills, .skills-btn, .contact-btn {
+    color: var(--dark-color);
     border: none;
     font-weight: 500;
-    font-size: 98pt;
+    font-size: 5vw;
     color: var(--dark-pink);
-    background: var(--light-background);
-    margin: 30px;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
-.project-button:hover, .contact-button:hover {
+.btn:hover, .contact-btn:hover {
     color:#ffaf37;
 }
 
-#linkedin, #github-contact, #email, #youtube, #github-project, #heroku, #javascript, #html, #css, #node, #github-skills {
-    background: var(--light-background);
+.main-container {
+    padding-top: 6vh;
+    height: 100%;
 }
 
-h3 {
-    background: var(--light-background);
-    color: var(--dark-color);
-    font-size: 14pt;
-    font-weight: 500;
-    height: 1100px;
-    margin-left: 220px;
-    margin-right: 220px;
-    padding: 50px;
-    text-align: center;
-    font-size: 16pt;
-    font-weight: 450;
+.main-btns {
+    padding-top: 6vh;
 }
 
-h3 > p {
-    background: var(--light-background);
-    font-size: 18pt;
-    font-weight: 650;
+.contact-btn, #linkedin, #github-contact, #email {
+    font-size: 10vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
+.skills-btn, #react, #javascript, #html, #css, #sql, #node, #github-skills {
+    font-size: 6vw;
+    margin-left: .7vw;
+    margin-right: .7vw;
+}
+
+.about-images {
+    font-size: 5vw;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+
+.about-img-container {
+    padding-bottom: 6vh;
+}
+
+.about-subtitle {
+    padding-bottom: 2.5vh; 
+ }
+
+ .about-images {
+    width: 15vw;
+    border-radius: 2%;
+}
+
+#me {
+    width: 32vw;
+    margin-top: 2.5vw;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 500px) {
+    .main-wrapper {
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+    
+    .main-container, .projects-container {
+        margin-right: 6vw;
+        margin-left: 6vw;
+    }
+    
+    .btn {
+        font-size: 12vw;
+        padding-bottom: 3vw;
+    }
+
+    #react, #javascript, #html, #css, #sql, #node, #github-skills, .skills-btn {
+        font-size: 9vw;
+    }
+
+    .about-images {
+        width: 25vw;
+    }
+
+    .contact-btn, #linkedin, #github-contact, #email {
+        font-size: 14vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    #me {
+        width: 65vw;
+        margin-top: 10vw;
+        border-radius: 50%;
+    }
+    }
+    

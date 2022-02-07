@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,36 +10,40 @@
     <script src="https://kit.fontawesome.com/6c9632d255.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="main-button-container">
-        <button class="main-button" id="home-button" onclick="window.location.href='/index.html'">Home</button>
-        <button class="main-button" id="about-button" onclick="window.location.href='/about.html'">About</button>
-        <button class="main-button" id="skills-button" onclick="window.location.href='/skills.html'">Skills</button>
-        <button class="main-button" id="projects-button" onclick="window.location.href='/projects.html'">Projects</button>
-        <button class="main-button" id="contact-button" style="background: #bde7ec" onclick="window.location.href='/contact.html'">Contact</button>
+    <div class="main-btn-container">
+        <button class="main-btn" id="home-btn" onclick="window.location.href='/index.html'">Home</btn>
+        <button class="main-btn" id="about-btn" onclick="window.location.href='/about.html'">About</btn>
+        <button class="main-btn" id="skills-btn" onclick="window.location.href='/skills.html'">Skills</btn>
+        <button class="main-btn" id="projects-btn" onclick="window.location.href='/projects.html'">Projects</btn>
+        <button class="main-btn" id="contact-btn" style="background: #bde7ec"
+            onclick="window.location.href='/contact.html'">Contact</btn>
     </div>
-    <h3 class="contact-container">
-        <br>
-        <p>Connect with me</p>
-        <br>
-        <button class="contact-button">
-            <a class="contact-button" href="https://www.linkedin.com/in/johnstoneelizabeth/" target="_blank">
-                <i class="fab fa-linkedin" id="linkedin"></i>
-            </a>
-        </button>
-        <button class="contact-button">
-            <a class="contact-button" href="https://github.com/Elizabeth-Johnstone" target="_blank">
-                <i class="fab fa-github" id="github-contact"></i>
-            </a>
-        </button>
-        <button class="contact-button">
-            <a class="contact-button" href="mailto:ewj218@nyu.edu">
-                <i class="fas fa-envelope" id="email"></i>
-            </a>  
-        </button>
-    </h3>
+
+    <div class="main-container">
+        <div class="main-wrapper" id="contact-wrapper">
+            <h2 class="main-title">Connect with me</h2>
+            <div class="main-btns">
+                <a class="contact-btn" href="https://www.linkedin.com/in/johnstoneelizabeth/" target="_blank">
+                    <i class="fab fa-linkedin" id="linkedin"></i>
+                </a>
+
+                <a class="contact-btn" href="https://github.com/Elizabeth-Johnstone" target="_blank">
+                    <i class="fab fa-github" id="github-contact"></i>
+                </a>
+
+                <a class="contact-btn" href="mailto:ewj218@nyu.edu">
+                    <i class="fas fa-envelope" id="email"></i>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
