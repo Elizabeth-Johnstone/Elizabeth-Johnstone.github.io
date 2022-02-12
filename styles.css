@@ -171,6 +171,7 @@
 
     .about-images {
         width: 25vw;
+        height: 25vw;
     }
 
     .contact-btn, #linkedin, #github-contact, #email {
